@@ -75,7 +75,7 @@
             "value": false
         },
         "enableSoftDelete": {
-            "value": false
+            "value": true
         },
         "softDeleteRetentionInDays": {
             "value": 90
@@ -101,13 +101,13 @@
             "value": false
         },
         "keyExp":{
-            "value": -1
+            "value": 300000
         },
         "keynbf":{
             "value": 300000
         },
         "keyExpiryTime":{
-            "value": ""
+            "value": "P90D"
         },
         "keySize":{
             "value": 2048
