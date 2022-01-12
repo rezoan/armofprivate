@@ -83,16 +83,16 @@
                     ],
                     "defaultAction": "Deny"
                 },
-                "supportsHttpsTrafficOnly": false,
+                "supportsHttpsTrafficOnly": true,
                 "encryption": {
                     "services": {
                         "file": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         },
                         "blob": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         }
                     },
                     "keySource": "Microsoft.Storage"
@@ -166,16 +166,16 @@
                     ],
                     "defaultAction": "Deny"
                 },
-                "supportsHttpsTrafficOnly": false,
+                "supportsHttpsTrafficOnly": true,
                 "encryption": {
                     "services": {
                         "file": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         },
                         "blob": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         }
                     },
                     "keySource": "Microsoft.Storage"
@@ -200,16 +200,16 @@
                     ],
                     "defaultAction": "Allow"
                 },
-                "supportsHttpsTrafficOnly": false,
+                "supportsHttpsTrafficOnly": true,
                 "encryption": {
                     "services": {
                         "file": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         },
                         "blob": {
                             "keyType": "Account",
-                            "enabled": false
+                            "enabled": true
                         }
                     },
                     "keySource": "Microsoft.Storage"

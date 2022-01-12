@@ -27,7 +27,7 @@
             "value": true
         },
         "networkAclsBypass": {
-            "value": "None"
+            "value": "AzureServices"
         },
         "networkAclsDefaultAction": {
             "value": "Allow"

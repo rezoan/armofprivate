@@ -93,10 +93,7 @@
             "type": "int"
         }
     },
-    "variables": {
-        "uniqueString": "[uniqueString(subscription().id, resourceGroup().id)]",
-        "diagnosticStorageAccountName": "[toLower( substring( replace( concat( parameters('keyVaultName'), variables('uniqueString'), variables('uniqueString') ), '-', ''), 0, 23) )]"
-    },
+    "variables": {},
     "resources": [
         {
             "apiVersion": "2018-02-14",
@@ -130,11 +127,7 @@
               "[resourceId('Microsoft.KeyVault/vaults', parameters('keyVaultName'))]"
             ],
             "properties": {
-              "attributes": {
-                "value": "[parameters('secretValue')]",
-                "enabled": "[parameters('keyEnabled')]",
-                "exp": "[parameters('keyExp')]"
-               }
+              "value": "[parameters('secretValue')]"
             }
         },
         {
@@ -156,28 +149,6 @@
                   "expiryTime": "[parameters('keyExpiryTime')]"
                 }
               }
-            }
-        },
-        {
-            "type" : "Microsoft.KeyVault/vaults/providers/diagnosticsettings",
-            "name": "LogSettings",
-            "scope": "",
-            "apiVersion": "2021-05-01-preview",
-            "properties": {
-              "workspaceId": "",
-              "storageAccountId": "",
-              "logs": [
-                  {
-                      "category": "Auditevent",
-                      "enabled": false
-                  }
-              ],
-              "metrics": [
-                  {
-                      "category": "Transaction",
-                      "enabled": true
-                  }
-              ]
             }
         }
     ],
