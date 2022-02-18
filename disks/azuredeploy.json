@@ -4,7 +4,7 @@
     "parameters": {
       "managedDiskName": {
         "type": "string",
-        "defaultValue": "ultraManagedDisk",
+        "defaultValue": "ultraManagedDiskOne",
         "metadata": {
           "description": "Name of the managed disk to be copied"
         }
