@@ -1,7 +1,7 @@
 ---
 name: Rego rule test evidence
 about: This template will contains Rego rule test evidence
-title: Rego rule test evidence
+title: Rego rule test evidence of <rego rule id>
 labels: ''
 assignees: ''
 
